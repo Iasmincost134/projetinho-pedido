@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            border: 0;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: pink;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .btn{
+            background-color: black;
+            color: white;
+            font: 300 40px 'Poppins', 'sans-serif';
+            padding: 15px 30px;
+            border-radius: 15px;
+            transition: ease-in-out 0.4s;
+            cursor: pointer;
+            width: 200px;
+        }
+        .TituloPrincipal{
+            font: 700 48px 'Popins';
+        }
+        .titulo{
+            text-align: center;
+            padding-bottom: 50px;
+            margin-top: 30px;
+        }
+      
+        .botoes{
+            display: flex;
+            justify-content: space-between;
+            margin: 0 200px;
+        }
+        .cachorrinho{
+            margin-top: 180px;
+            width: 300px;
+        }
+    </style>
+    <script>
+        function sim(){
+            location.href = "https://youtu.be/izGwDsrQ1eQ?si=OR_oeYsgd-yED-3h"
+        }
+        function desvia(btn){
+            btn.style.position = 'absolute';
+            btn.style.bottom = posicao(10, 80);
+            btn.style.left = posicao (10,80);
+        }
+        function posicao(min, max){
+            return(Math.random()*(max - min) + min)+"%"
+        }
+    </script>
+</head>
+<body>
+    <div class="titulo">
+        <h1 class="tituloPrincipal">QUER NAMORAR COMIGO?</h1>
+    </div>
+    <div class="botoes">
+        <div class="botaoS">
+            <BUtton class="btn" onclick="sim()">SIM</BUtton>
+        </div>
+        <div class="botaoN">
+            <button class="btn" onclick="desvia(this)" onmouseover="desvia(this)">NÃO</button>
+        </div>
+    </div>
+    <div class="imagem">
+        <img class="cachorrinho" src="pngtree-dog-valentine-vector-png-image_6892051.png" alt="">
+    </div>
+</body>
+</html>
