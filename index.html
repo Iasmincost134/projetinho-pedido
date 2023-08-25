@@ -19,7 +19,7 @@
         .btn{
             background-color: black;
             color: white;
-            font: 300 40px 'Poppins', 'sans-serif';
+            font: 300 40px 'Poppins', sans-serif;
             padding: 15px 30px;
             border-radius: 15px;
             transition: ease-in-out 0.4s;
@@ -27,7 +27,7 @@
             width: 200px;
         }
         .TituloPrincipal{
-            font: 700 48px 'Popins';
+            font: 700 48px 'Poppins', sans-serif;
         }
         .titulo{
             text-align: center;
@@ -43,6 +43,12 @@
         .cachorrinho{
             margin-top: 180px;
             width: 300px;
+        }
+        @media screen and (max-width: 400px) {
+            .botoes{
+                margin: 0;
+                flex-direction: column;
+            }
         }
     </style>
     <script>
